@@ -9,3 +9,4 @@
 import UIKit
 
 let iconColour = UIColor(named: "IconColourSet")
+let localJSONFile = "instaClone.json"

@@ -1,0 +1,108 @@
+{
+    "stories": [{
+            "user": {
+                "user_id": 201,
+                "username": "Mario",
+                "profile_image_url": ""
+            },
+            "is_watched": false
+        },
+        {
+            "user": {
+                "user_id": 202,
+                "username": "Koopa Troopa",
+                "profile_image_url": "https://www.mariowiki.com/images/thumb/5/5c/SuperMarioParty_KoopaTroopa.png/225px-SuperMarioParty_KoopaTroopa.png"
+            },
+            "is_watched": true
+        },
+        {
+            "user": {
+                "user_id": 203,
+                "username": "Bowser",
+                "profile_image_url": ""
+            },
+            "is_watched": true
+        },
+        {
+            "user": {
+                "user_id": 40,
+                "username": "Bart Simpson",
+                "profile_image_url": "https://simpsonswiki.com/wiki/File:Bart_Simpson.png"
+            },
+            "is_watched": false
+        },
+        {
+            "user": {
+                "user_id": 41,
+                "username": "Homer Simpson",
+                "profile_image_url": "http://interactive.nydailynews.com/2016/05/simpsons-quiz/img/simp1.jpg"
+            },
+            "is_watched": true
+        }
+
+    ],
+    "newsFeed": [{
+            "user": {
+                "user_id": 345,
+                "username": "Baby Mario",
+                "profile_image_url": "https://www.mariowiki.com/images/thumb/5/58/BabyMarioSluggers.png/1200px-BabyMarioSluggers.png"
+            },
+            "image_url": "",
+            "likes": 1110,
+            "last_comment": {
+                "comment": "Yo, Baby M, when you coming back to the Mushroom Kingom, Luigi needs your help!",
+                "user": {
+                    "username": "Mario",
+                    "user_id": 201
+                }
+            },
+            "post_id": 1420
+        },
+        {
+            "user": {
+                "user_id": 40,
+                "username": "Bart Simpson",
+                "profile_image_url": "https://static.simpsonswiki.com/images/6/65/Bart_Simpson.png"
+            },
+            "image_url": "",
+            "likes": 130,
+            "last_comment": {
+                "comment": "Wow, Bart love this post",
+                "user": {
+                    "username": "Homer Simpson",
+                    "user_id": 41
+                }
+
+            },
+            "post_id": 400
+        },
+        {
+            "user": {
+                "user_id": 178,
+                "username": "That iOS Dev",
+                "profile_image_url": "https://yt3.ggpht.com/a/AGF-l7_TNBHKGp2kVyxwuhQI1-rCh53x_Wm-qbKgmg=s88-c-k-c0x00ffffff-no-rj"
+            },
+            "image_url": "",
+            "likes": 1,
+            "last_comment": {
+                "comment": "Great App maybe this can be a useful app",
+                "user": {
+                    "username": "Another iOS Dev",
+                    "user_id": 179
+                }
+
+            },
+            "post_id": 160549
+        },
+        {
+            "user": {
+                "user_id": 18,
+                "username": "He-Man",
+                "profile_image_url": "https://m.media-amazon.com/images/M/MV5BMjc4YjE1MGYtOGJiZC00MmM1LThlZTctNWU0ZjNiYWQwY2ZhXkEyXkFqcGdeQXVyMDk0ODI3OA@@._V1_.jpg"
+            },
+            "image_url": "",
+            "likes": 1100,
+            "post_id": 160549
+        }
+    ]
+}

@@ -10,7 +10,7 @@ import AsyncDisplayKit
 
 class HeaderNode: BaseNode{
     
-    var profileImageNode = ASImageNode()
+    var profileImageNode = ASNetworkImageNode()
     var nameNode = ASTextNode()
     var extraButton = ASButtonNode()
     var elipseNode = ASImageNode()
@@ -59,7 +59,7 @@ class HeaderNode: BaseNode{
     //MARK:- Private Fucntions
     
     private func setup(){
-        profileImageNode.backgroundColor = .green
+//        profileImageNode.backgroundColor = .green
         profileImageNode.cornerRadius = 35/2
         profileImageNode.style.preferredSize = CGSize(width: 35, height: 35)
         if let colour = iconColour{

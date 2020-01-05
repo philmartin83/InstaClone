@@ -9,6 +9,18 @@
 import AsyncDisplayKit
 
 class HomeTableNodeDataSource: NSObject, ASTableDataSource{
+
+    var reloadTableView: (() -> Void)?
+    private var dataSource: BaseDataSource?
+    
+    func fetchDataFromLocalPath(){
+        dataSource = Bundle.main.decode(BaseDataSource.self, from: localJSONFile)
+        if let _ = dataSource{
+            reloadTableView?()
+        }else{
+            fatalError("Couldn't get data from bundle extension")
+        }
+    }
     
     func numberOfSections(in tableNode: ASTableNode) -> Int {
         return 2
@@ -18,7 +30,7 @@ class HomeTableNodeDataSource: NSObject, ASTableDataSource{
         if section == 0{
             return 1
         }else{
-            return 20
+            return dataSource?.newsFeed?.count ?? 0
         }
     }
     
@@ -27,8 +39,8 @@ class HomeTableNodeDataSource: NSObject, ASTableDataSource{
             let cell = StoryCellNode()
             return cell
         }else{
-            let cell = FeedCellNode()
-            cell.popluate(name: "Name \(indexPath.row)")
+            let item = dataSource?.newsFeed?[indexPath.row]
+            let cell = FeedCellNode(feed: item)
             return cell
         }
     }

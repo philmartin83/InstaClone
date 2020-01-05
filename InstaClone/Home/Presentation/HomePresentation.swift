@@ -15,6 +15,12 @@ class HomePresentation: BaseNode, ASTableDelegate{
     override init() {
         super.init()
         table.dataSource = dataSource
+        dataSource.fetchDataFromLocalPath()
+        dataSource.reloadTableView = { [weak self] in
+            if let weakSelf = self{
+                weakSelf.table.reloadData()
+            }
+        }
         table.allowsSelection = false
     }
     
