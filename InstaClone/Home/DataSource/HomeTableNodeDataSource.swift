@@ -34,14 +34,16 @@ class HomeTableNodeDataSource: NSObject, ASTableDataSource{
         }
     }
     
-    func tableNode(_ tableNode: ASTableNode, nodeForRowAt indexPath: IndexPath) -> ASCellNode {
-        if indexPath.section == 0{
-            let cell = StoryCellNode()
-            return cell
-        }else{
-            let item = dataSource?.newsFeed?[indexPath.row]
-            let cell = FeedCellNode(feed: item)
-            return cell
+    func tableNode(_ tableNode: ASTableNode, nodeBlockForRowAt indexPath: IndexPath) -> ASCellNodeBlock {
+        return { [weak self] in
+            if indexPath.section == 0{
+                let cell = StoryCellNode()
+                return cell
+            }else{
+                let item = self?.dataSource?.newsFeed?[indexPath.row]
+                let cell = FeedCellNode(feed: item)
+                return cell
+            }
         }
     }
 }
