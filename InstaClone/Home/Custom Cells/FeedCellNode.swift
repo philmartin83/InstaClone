@@ -12,13 +12,14 @@ class FeedCellNode: ASCellNode{
     var headerNode = HeaderNode()
     var imageFeedNode = FeedImageNode()
     var likeCommentNode = LikeShareCommentNode()
+    var lastCommentNode = LastCommentNode()
     private var feed: NewsFeed?
     
     init(feed: NewsFeed?) {
         super.init()
         self.automaticallyManagesSubnodes = true
         self.feed = feed
-        styling()
+        populate(feed: self.feed)
     }
     
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
@@ -27,6 +28,10 @@ class FeedCellNode: ASCellNode{
         layoutArray.append(imageFeedNode)
         if let likes = feed?.likes, likes > 0{
             layoutArray.append(likeCommentNode)
+        }
+        
+        if let lastComment = feed?.lastComment, lastComment.comment?.count ?? 0 > 0 {
+            layoutArray.append(lastCommentNode)
         }
     
         let vStack = ASStackLayoutSpec(
@@ -38,13 +43,10 @@ class FeedCellNode: ASCellNode{
         return vStack
     }
     
-    func styling(){
-        headerNode.nameNode.attributedText = NSAttributedString(string: feed?.user?.username ?? "", attributes: [NSAttributedString.Key.foregroundColor: UIColor.label,  NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 15)])
-        headerNode.profileImageNode.url = URL(string: feed?.user?.profileIcon ?? "")
-        // handle the like logic this can be put into its own class
-        print("\(feed?.user?.profileIcon)")
-        let stringValue = feed?.likes == 1 ? "\(feed?.likes ?? 0) like" : "\(feed?.likes ?? 0) likes"
-        likeCommentNode.likeCount = feed?.likes ?? 0
-        likeCommentNode.numberOfLikes.attributedText = NSAttributedString(string: stringValue, attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 13)])
+    private func populate(feed: NewsFeed?) {
+        headerNode.populate(feed: feed)
+        imageFeedNode.populate(feed: feed)
+        likeCommentNode.populate(feed: feed)
+        lastCommentNode.populate(feed: feed)
     }
 }

@@ -10,7 +10,7 @@ import Foundation
 
 struct Stories: Codable{
     let user: User
-    let isWatched: Bool
+    let isWatched: Bool?
     
     enum CodingKeys: String, CodingKey{
         case user

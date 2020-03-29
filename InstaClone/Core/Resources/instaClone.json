@@ -1,108 +1,338 @@
 {
     "stories": [{
-            "user": {
-                "user_id": 201,
-                "username": "Mario",
-                "profile_image_url": ""
-            },
-            "is_watched": false
+        "user": {
+            "user_id": 201,
+            "username": "Mario",
+            "profile_image_url": "https://giantbomb1.cbsistatic.com/uploads/original/15/153607/3075875-mario.png"
         },
-        {
-            "user": {
-                "user_id": 202,
-                "username": "Koopa Troopa",
-                "profile_image_url": "https://www.mariowiki.com/images/thumb/5/5c/SuperMarioParty_KoopaTroopa.png/225px-SuperMarioParty_KoopaTroopa.png"
-            },
-            "is_watched": true
+        "isWatched": false
+    },
+    {
+        "user": {
+            "user_id": 202,
+            "username": "Koopa Troopa",
+            "profile_image_url": "https://www.mariowiki.com/images/thumb/5/5c/SuperMarioParty_KoopaTroopa.png/225px-SuperMarioParty_KoopaTroopa.png"
         },
-        {
-            "user": {
-                "user_id": 203,
-                "username": "Bowser",
-                "profile_image_url": ""
-            },
-            "is_watched": true
+        "isWatched": true
+    },
+    {
+        "user": {
+            "user_id": 203,
+            "username": "Bowser",
+            "profile_image_url": ""
         },
-        {
-            "user": {
-                "user_id": 40,
-                "username": "Bart Simpson",
-                "profile_image_url": "https://simpsonswiki.com/wiki/File:Bart_Simpson.png"
-            },
-            "is_watched": false
+        "isWatched": true
+    },
+    {
+        "user": {
+            "user_id": 40,
+            "username": "Bart Simpson",
+            "profileIcon": "https://simpsonswiki.com/wiki/File:Bart_Simpson.png"
         },
-        {
-            "user": {
-                "user_id": 41,
-                "username": "Homer Simpson",
-                "profile_image_url": "http://interactive.nydailynews.com/2016/05/simpsons-quiz/img/simp1.jpg"
-            },
-            "is_watched": true
-        }
-
+        "isWatched": false
+    },
+    {
+        "user": {
+            "user_id": 41,
+            "username": "Homer Simpson",
+            "profile_image_url": "https://images.immediate.co.uk/production/volatile/sites/3/2018/08/Simpsons_SO28_Gallery_11-fb0b632.jpg"
+        },
+        "isWatched": true
+    }
+    
     ],
     "newsFeed": [{
-            "user": {
-                "user_id": 345,
-                "username": "Baby Mario",
-                "profile_image_url": "https://www.mariowiki.com/images/thumb/5/58/BabyMarioSluggers.png/1200px-BabyMarioSluggers.png"
-            },
-            "image_url": "",
-            "likes": 1110,
-            "last_comment": {
-                "comment": "Yo, Baby M, when you coming back to the Mushroom Kingom, Luigi needs your help!",
-                "user": {
-                    "username": "Mario",
-                    "user_id": 201
-                }
-            },
-            "post_id": 1420
+        "user": {
+            "user_id": 345,
+            "username": "Baby Mario",
+            "profile_image_url": "https://www.mariowiki.com/images/thumb/5/58/BabyMarioSluggers.png/1200px-BabyMarioSluggers.png"
         },
-        {
+        "image_url": "https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg",
+        "aspect_ratio": 1,
+        "likes": 1110,
+        "last_comment": {
+            "comment": "Yo, Baby M, when you coming back to the Mushroom Kingom, Luigi needs your help!",
             "user": {
-                "user_id": 40,
-                "username": "Bart Simpson",
-                "profile_image_url": "https://static.simpsonswiki.com/images/6/65/Bart_Simpson.png"
-            },
-            "image_url": "",
-            "likes": 130,
-            "last_comment": {
-                "comment": "Wow, Bart love this post",
-                "user": {
-                    "username": "Homer Simpson",
-                    "user_id": 41
-                }
-
-            },
-            "post_id": 400
+                "username": "Mario",
+                "user_id": 201,
+                "profile_image_url": "https://giantbomb1.cbsistatic.com/uploads/original/15/153607/3075875-mario.png"
+            }
         },
-        {
-            "user": {
-                "user_id": 178,
-                "username": "That iOS Dev",
-                "profile_image_url": "https://yt3.ggpht.com/a/AGF-l7_TNBHKGp2kVyxwuhQI1-rCh53x_Wm-qbKgmg=s88-c-k-c0x00ffffff-no-rj"
-            },
-            "image_url": "",
-            "likes": 1,
-            "last_comment": {
-                "comment": "Great App maybe this can be a useful app",
-                "user": {
-                    "username": "Another iOS Dev",
-                    "user_id": 179
-                }
-
-            },
-            "post_id": 160549
+        "post_id": 1420,
+        "dateAdded": false
+    },
+    {
+        "user": {
+            "user_id": 40,
+            "username": "Bart Simpson",
+            "profile_image_url": "https://static.simpsonswiki.com/images/6/65/Bart_Simpson.png"
         },
-        {
+        "image_url": "https://images.pexels.com/photos/371589/pexels-photo-371589.jpeg",
+        "aspect_ratio": 0.65,
+        "likes": 130,
+        "last_comment": {
+            "comment": "Wow, Bart love this post",
             "user": {
-                "user_id": 18,
-                "username": "He-Man",
-                "profile_image_url": "https://m.media-amazon.com/images/M/MV5BMjc4YjE1MGYtOGJiZC00MmM1LThlZTctNWU0ZjNiYWQwY2ZhXkEyXkFqcGdeQXVyMDk0ODI3OA@@._V1_.jpg"
-            },
-            "image_url": "",
-            "likes": 1100,
-            "post_id": 160549
-        }
+                "username": "Homer Simpson",
+                "user_id": 41,
+                "profile_image_url": "https://images.immediate.co.uk/production/volatile/sites/3/2018/08/Simpsons_SO28_Gallery_11-fb0b632.jpg"
+            }
+            
+        },
+        "post_id": 400,
+        "dateAdded": false
+    },
+    {
+        "user": {
+            "user_id": 178,
+            "username": "That iOS Dev",
+            "profile_image_url": "https://yt3.ggpht.com/-8Paqd4H_71o/AAAAAAAAAAI/AAAAAAAAAAA/dBxKlfFbRNk/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg"
+        },
+        "image_url": "https://images.pexels.com/photos/462024/pexels-photo-462024.jpeg",
+        "aspect_ratio": 0.4,
+        "likes": 1,
+        "last_comment": {
+            "comment": "Great App maybe this can be a useful app",
+            "user": {
+                "username": "Another iOS Dev",
+                "user_id": 179,
+                "profile_image_url": "https://i.pinimg.com/originals/51/cd/3d/51cd3d8839ba14f09271b083dc521415.png"
+            }
+            
+        },
+        "post_id": 160549
+    },
+    {
+        "user": {
+            "user_id": 18,
+            "username": "He-Man",
+            "profile_image_url": "https://m.media-amazon.com/images/M/MV5BMjc4YjE1MGYtOGJiZC00MmM1LThlZTctNWU0ZjNiYWQwY2ZhXkEyXkFqcGdeQXVyMDk0ODI3OA@@._V1_.jpg"
+        },
+        "image_url": "https://images.pexels.com/photos/158063/bellingrath-gardens-alabama-landscape-scenic-158063.jpeg",
+        "aspect_ratio": 0.7,
+        "likes": 1100,
+        "last_comment": {},
+        "post_id": 160549
+    },
+    {
+        "user": {
+            "user_id": 345,
+            "username": "Baby Mario",
+            "profile_image_url": "https://www.mariowiki.com/images/thumb/5/58/BabyMarioSluggers.png/1200px-BabyMarioSluggers.png"
+        },
+        "image_url": "https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg",
+        "aspect_ratio": 1,
+        "likes": 1110,
+        "last_comment": {
+            "comment": "Yo, Baby M, when you coming back to the Mushroom Kingom, Luigi needs your help!",
+            "user": {
+                "username": "Mario",
+                "user_id": 201,
+                "profile_image_url": "https://giantbomb1.cbsistatic.com/uploads/original/15/153607/3075875-mario.png"
+            }
+        },
+        "post_id": 1420,
+        "dateAdded": false
+    },
+    {
+        "user": {
+            "user_id": 40,
+            "username": "Bart Simpson",
+            "profile_image_url": "https://static.simpsonswiki.com/images/6/65/Bart_Simpson.png"
+        },
+        "image_url": "https://images.pexels.com/photos/371589/pexels-photo-371589.jpeg",
+        "aspect_ratio": 0.65,
+        "likes": 130,
+        "last_comment": {
+            "comment": "Wow, Bart love this post",
+            "user": {
+                "username": "Homer Simpson",
+                "user_id": 41,
+                "profile_image_url": "https://images.immediate.co.uk/production/volatile/sites/3/2018/08/Simpsons_SO28_Gallery_11-fb0b632.jpg"
+            }
+            
+        },
+        "post_id": 400,
+        "dateAdded": false
+    },
+    {
+        "user": {
+            "user_id": 178,
+            "username": "That iOS Dev",
+            "profile_image_url": "https://yt3.ggpht.com/-8Paqd4H_71o/AAAAAAAAAAI/AAAAAAAAAAA/dBxKlfFbRNk/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg"
+        },
+        "image_url": "https://images.pexels.com/photos/462024/pexels-photo-462024.jpeg",
+        "aspect_ratio": 0.4,
+        "likes": 1,
+        "last_comment": {
+            "comment": "Great App maybe this can be a useful app",
+            "user": {
+                "username": "Another iOS Dev",
+                "user_id": 179,
+                "profile_image_url": "https://i.pinimg.com/originals/51/cd/3d/51cd3d8839ba14f09271b083dc521415.png"
+            }
+            
+        },
+        "post_id": 160549
+    },
+    {
+        "user": {
+            "user_id": 18,
+            "username": "He-Man",
+            "profile_image_url": "https://m.media-amazon.com/images/M/MV5BMjc4YjE1MGYtOGJiZC00MmM1LThlZTctNWU0ZjNiYWQwY2ZhXkEyXkFqcGdeQXVyMDk0ODI3OA@@._V1_.jpg"
+        },
+        "image_url": "https://images.pexels.com/photos/158063/bellingrath-gardens-alabama-landscape-scenic-158063.jpeg",
+        "aspect_ratio": 0.7,
+        "likes": 1100,
+        "last_comment": {},
+        "post_id": 160549
+    },
+    {
+        "user": {
+            "user_id": 345,
+            "username": "Baby Mario",
+            "profile_image_url": "https://www.mariowiki.com/images/thumb/5/58/BabyMarioSluggers.png/1200px-BabyMarioSluggers.png"
+        },
+        "image_url": "https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg",
+        "aspect_ratio": 1,
+        "likes": 1110,
+        "last_comment": {
+            "comment": "Yo, Baby M, when you coming back to the Mushroom Kingom, Luigi needs your help!",
+            "user": {
+                "username": "Mario",
+                "user_id": 201,
+                "profile_image_url": "https://giantbomb1.cbsistatic.com/uploads/original/15/153607/3075875-mario.png"
+            }
+        },
+        "post_id": 1420,
+        "dateAdded": false
+    },
+    {
+        "user": {
+            "user_id": 40,
+            "username": "Bart Simpson",
+            "profile_image_url": "https://static.simpsonswiki.com/images/6/65/Bart_Simpson.png"
+        },
+        "image_url": "https://images.pexels.com/photos/371589/pexels-photo-371589.jpeg",
+        "aspect_ratio": 0.65,
+        "likes": 130,
+        "last_comment": {
+            "comment": "Wow, Bart love this post",
+            "user": {
+                "username": "Homer Simpson",
+                "user_id": 41,
+                "profile_image_url": "https://images.immediate.co.uk/production/volatile/sites/3/2018/08/Simpsons_SO28_Gallery_11-fb0b632.jpg"
+            }
+            
+        },
+        "post_id": 400,
+        "dateAdded": false
+    },
+    {
+        "user": {
+            "user_id": 178,
+            "username": "That iOS Dev",
+            "profile_image_url": "https://yt3.ggpht.com/-8Paqd4H_71o/AAAAAAAAAAI/AAAAAAAAAAA/dBxKlfFbRNk/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg"
+        },
+        "image_url": "https://images.pexels.com/photos/462024/pexels-photo-462024.jpeg",
+        "aspect_ratio": 0.4,
+        "likes": 1,
+        "last_comment": {
+            "comment": "Great App maybe this can be a useful app",
+            "user": {
+                "username": "Another iOS Dev",
+                "user_id": 179,
+                "profile_image_url": "https://i.pinimg.com/originals/51/cd/3d/51cd3d8839ba14f09271b083dc521415.png"
+            }
+            
+        },
+        "post_id": 160549
+    },
+    {
+        "user": {
+            "user_id": 18,
+            "username": "He-Man",
+            "profile_image_url": "https://m.media-amazon.com/images/M/MV5BMjc4YjE1MGYtOGJiZC00MmM1LThlZTctNWU0ZjNiYWQwY2ZhXkEyXkFqcGdeQXVyMDk0ODI3OA@@._V1_.jpg"
+        },
+        "image_url": "https://images.pexels.com/photos/158063/bellingrath-gardens-alabama-landscape-scenic-158063.jpeg",
+        "aspect_ratio": 0.7,
+        "likes": 1100,
+        "last_comment": {},
+        "post_id": 160549
+    },
+    {
+        "user": {
+            "user_id": 345,
+            "username": "Baby Mario",
+            "profile_image_url": "https://www.mariowiki.com/images/thumb/5/58/BabyMarioSluggers.png/1200px-BabyMarioSluggers.png"
+        },
+        "image_url": "https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg",
+        "aspect_ratio": 1,
+        "likes": 1110,
+        "last_comment": {
+            "comment": "Yo, Baby M, when you coming back to the Mushroom Kingom, Luigi needs your help!",
+            "user": {
+                "username": "Mario",
+                "user_id": 201,
+                "profile_image_url": "https://giantbomb1.cbsistatic.com/uploads/original/15/153607/3075875-mario.png"
+            }
+        },
+        "post_id": 1420,
+        "dateAdded": false
+    },
+    {
+        "user": {
+            "user_id": 40,
+            "username": "Bart Simpson",
+            "profile_image_url": "https://static.simpsonswiki.com/images/6/65/Bart_Simpson.png"
+        },
+        "image_url": "https://images.pexels.com/photos/371589/pexels-photo-371589.jpeg",
+        "aspect_ratio": 0.65,
+        "likes": 130,
+        "last_comment": {
+            "comment": "Wow, Bart love this post",
+            "user": {
+                "username": "Homer Simpson",
+                "user_id": 41,
+                "profile_image_url": "https://images.immediate.co.uk/production/volatile/sites/3/2018/08/Simpsons_SO28_Gallery_11-fb0b632.jpg"
+            }
+            
+        },
+        "post_id": 400,
+        "dateAdded": false
+    },
+    {
+        "user": {
+            "user_id": 178,
+            "username": "That iOS Dev",
+            "profile_image_url": "https://yt3.ggpht.com/-8Paqd4H_71o/AAAAAAAAAAI/AAAAAAAAAAA/dBxKlfFbRNk/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg"
+        },
+        "image_url": "https://images.pexels.com/photos/462024/pexels-photo-462024.jpeg",
+        "aspect_ratio": 0.4,
+        "likes": 1,
+        "last_comment": {
+            "comment": "Great App maybe this can be a useful app",
+            "user": {
+                "username": "Another iOS Dev",
+                "user_id": 179,
+                "profile_image_url": "https://i.pinimg.com/originals/51/cd/3d/51cd3d8839ba14f09271b083dc521415.png"
+            }
+            
+        },
+        "post_id": 160549
+    },
+    {
+        "user": {
+            "user_id": 18,
+            "username": "He-Man",
+            "profile_image_url": "https://m.media-amazon.com/images/M/MV5BMjc4YjE1MGYtOGJiZC00MmM1LThlZTctNWU0ZjNiYWQwY2ZhXkEyXkFqcGdeQXVyMDk0ODI3OA@@._V1_.jpg"
+        },
+        "image_url": "https://images.pexels.com/photos/158063/bellingrath-gardens-alabama-landscape-scenic-158063.jpeg",
+        "aspect_ratio": 0.7,
+        "likes": 1100,
+        "last_comment": {},
+        "post_id": 160549
+    }
     ]
 }
+

@@ -59,7 +59,7 @@ class HeaderNode: BaseNode{
     //MARK:- Private Fucntions
     
     private func setup(){
-//        profileImageNode.backgroundColor = .green
+        //        profileImageNode.backgroundColor = .green
         profileImageNode.cornerRadius = 35/2
         profileImageNode.style.preferredSize = CGSize(width: 35, height: 35)
         if let colour = iconColour{
@@ -67,6 +67,11 @@ class HeaderNode: BaseNode{
             extraButton.setImage(image, for: .normal)
         }
         extraButton.style.preferredSize = CGSize(width: 10, height: 10)
+    }
+    
+    func populate(feed: NewsFeed?) {
+        nameNode.attributedText = NSAttributedString(string: feed?.user?.username ?? "", attributes: [NSAttributedString.Key.foregroundColor: UIColor.label,  NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 15)])
+        profileImageNode.url = URL(string: feed?.user?.profileIcon ?? "")
     }
     
 }

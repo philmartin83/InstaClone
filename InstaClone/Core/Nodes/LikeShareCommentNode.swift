@@ -58,10 +58,10 @@ class LikeShareCommentNode: BaseNode{
         let dynamicPadding = ASInsetLayoutSpec()
         if let count = likeCount, count > 0{
             dynamicPadding.insets = UIEdgeInsets(
-                                top: 0,
-                                left: 16,
-                                bottom: 8,
-                                right: 0)
+                top: 0,
+                left: 16,
+                bottom: 8,
+                right: 0)
             dynamicPadding.child = numberOfLikes
             dynamicLayout.append(dynamicPadding)
             
@@ -95,5 +95,14 @@ class LikeShareCommentNode: BaseNode{
             bookmark.setImage(imageBookmark, for: .normal)
             
         }
+    }
+    
+    func populate(feed: NewsFeed?) {
+        
+        // handle the like logic this can be put into its own class
+        print("\(feed?.user?.profileIcon)")
+        let stringValue = feed?.likes == 1 ? "\(feed?.likes ?? 0) like" : "\(feed?.likes ?? 0) likes"
+        likeCount = feed?.likes ?? 0
+        numberOfLikes.attributedText = NSAttributedString(string: stringValue, attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 13)])
     }
 }

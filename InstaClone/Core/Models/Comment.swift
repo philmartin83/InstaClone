@@ -9,6 +9,6 @@
 import Foundation
 
 struct Comment: Codable{
-    let comment: String
-    let user: User
+    let comment: String?
+    let user: User?
 }
