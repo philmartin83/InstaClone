@@ -15,6 +15,7 @@ class HomePresentation: BaseNode, ASTableDelegate{
     override init() {
         super.init()
         table.dataSource = dataSource
+        table.view.tableFooterView = UIView(frame: .zero)
         dataSource.fetchDataFromLocalPath()
         dataSource.reloadTableView = { [weak self] in
             if let weakSelf = self{
