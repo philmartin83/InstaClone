@@ -1,11 +1,16 @@
 {
+    "my_user": {
+        "user_id": 178,
+        "username": "That iOS Dev",
+        "profile_image_url": "https://yt3.ggpht.com/-8Paqd4H_71o/AAAAAAAAAAI/AAAAAAAAAAA/dBxKlfFbRNk/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg"
+    },
     "stories": [{
         "user": {
             "user_id": 201,
             "username": "Mario",
             "profile_image_url": "https://giantbomb1.cbsistatic.com/uploads/original/15/153607/3075875-mario.png"
         },
-        "isWatched": false
+        "is_watched": false
     },
     {
         "user": {
@@ -13,23 +18,23 @@
             "username": "Koopa Troopa",
             "profile_image_url": "https://www.mariowiki.com/images/thumb/5/5c/SuperMarioParty_KoopaTroopa.png/225px-SuperMarioParty_KoopaTroopa.png"
         },
-        "isWatched": true
+        "is_watched": true
     },
     {
         "user": {
             "user_id": 203,
             "username": "Bowser",
-            "profile_image_url": ""
+            "profile_image_url": "https://s.abcnews.com/images/Technology/HT_bowser_jef_150520_16x9_992.jpg"
         },
-        "isWatched": true
+        "is_watched": true
     },
     {
         "user": {
             "user_id": 40,
             "username": "Bart Simpson",
-            "profileIcon": "https://simpsonswiki.com/wiki/File:Bart_Simpson.png"
+            "profile_image_url": "https://static.simpsonswiki.com/images/6/65/Bart_Simpson.png"
         },
-        "isWatched": false
+        "is_watched": false
     },
     {
         "user": {
@@ -37,11 +42,11 @@
             "username": "Homer Simpson",
             "profile_image_url": "https://images.immediate.co.uk/production/volatile/sites/3/2018/08/Simpsons_SO28_Gallery_11-fb0b632.jpg"
         },
-        "isWatched": true
+        "is_watched": true
     }
     
     ],
-    "newsFeed": [{
+    "news_feed": [{
         "user": {
             "user_id": 345,
             "username": "Baby Mario",
@@ -335,4 +340,5 @@
     }
     ]
 }
+
 

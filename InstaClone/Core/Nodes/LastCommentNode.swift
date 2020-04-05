@@ -21,6 +21,8 @@ class LastCommentNode: BaseNode {
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
         
         let hStack = ASStackLayoutSpec(direction: .vertical, spacing: 6, justifyContent: .start, alignItems: .stretch, children: [nameNode, textNode])
+        hStack.style.flexShrink = 1
+        hStack.style.flexGrow = 1
         let layoutSpec = ASStackLayoutSpec(direction: .horizontal, spacing: 6, justifyContent: .start, alignItems: .stretch, children: [imageNode, hStack])
         
         return ASInsetLayoutSpec(insets: .init(top: 10, left: 10, bottom: 10, right: 10), child: layoutSpec)
