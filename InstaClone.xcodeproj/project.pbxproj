@@ -40,6 +40,11 @@
 		4A9C966223A4412300D4873B /* LikeShareCommentInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C966123A4412300D4873B /* LikeShareCommentInteractor.swift */; };
 		4AA707762452247000E0FBA6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA707752452247000E0FBA6 /* ProfileViewController.swift */; };
 		4AA7077A24522CAE00E0FBA6 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7077924522CAE00E0FBA6 /* ProfilePresenter.swift */; };
+		4AA7077D24522FE900E0FBA6 /* ProfileDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7077C24522FE900E0FBA6 /* ProfileDataSource.swift */; };
+		4AA707802452334A00E0FBA6 /* ProfileHeaderNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7077F2452334A00E0FBA6 /* ProfileHeaderNode.swift */; };
+		4AA707832452338B00E0FBA6 /* BaseCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA707822452338B00E0FBA6 /* BaseCellNode.swift */; };
+		4AA707852452350100E0FBA6 /* ProfileAndStatsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA707842452350100E0FBA6 /* ProfileAndStatsNode.swift */; };
+		4AA707872452391400E0FBA6 /* StatsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA707862452391400E0FBA6 /* StatsNode.swift */; };
 		A312D2AE5ED7771F8C6BC00F /* Pods_InstaCloneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E82D0195F02DE45643583B /* Pods_InstaCloneTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +98,11 @@
 		4A9C966123A4412300D4873B /* LikeShareCommentInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeShareCommentInteractor.swift; sourceTree = "<group>"; };
 		4AA707752452247000E0FBA6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4AA7077924522CAE00E0FBA6 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		4AA7077C24522FE900E0FBA6 /* ProfileDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataSource.swift; sourceTree = "<group>"; };
+		4AA7077F2452334A00E0FBA6 /* ProfileHeaderNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderNode.swift; sourceTree = "<group>"; };
+		4AA707822452338B00E0FBA6 /* BaseCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCellNode.swift; sourceTree = "<group>"; };
+		4AA707842452350100E0FBA6 /* ProfileAndStatsNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAndStatsNode.swift; sourceTree = "<group>"; };
+		4AA707862452391400E0FBA6 /* StatsNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsNode.swift; sourceTree = "<group>"; };
 		55FF43EDC841F57C150B6613 /* Pods_InstaClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		848B9C00E1839240DCC7C41A /* Pods-InstaCloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaCloneTests.debug.xcconfig"; path = "Target Support Files/Pods-InstaCloneTests/Pods-InstaCloneTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E88A74494FC4D9140B249F60 /* Pods-InstaClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaClone.debug.xcconfig"; path = "Target Support Files/Pods-InstaClone/Pods-InstaClone.debug.xcconfig"; sourceTree = "<group>"; };
@@ -158,7 +168,6 @@
 				4A363F91239D97AF009B4F10 /* Assets.xcassets */,
 				4A363F93239D97AF009B4F10 /* LaunchScreen.storyboard */,
 				4A363F96239D97AF009B4F10 /* Info.plist */,
-				4A363FAA239D99DE009B4F10 /* BaseNode.swift */,
 			);
 			path = InstaClone;
 			sourceTree = "<group>";
@@ -219,6 +228,9 @@
 				4A64E0EA2430B7CE0041B902 /* LastCommentNode.swift */,
 				4A42EC0F243A6F2B0008F705 /* StoryFeedNode.swift */,
 				4A42EC15243A86860008F705 /* UserStorieNode.swift */,
+				4AA7077F2452334A00E0FBA6 /* ProfileHeaderNode.swift */,
+				4AA707842452350100E0FBA6 /* ProfileAndStatsNode.swift */,
+				4AA707862452391400E0FBA6 /* StatsNode.swift */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -272,6 +284,7 @@
 		4A9C965C23A4391F00D4873B /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				4AA707812452337800E0FBA6 /* BaseNodes */,
 				4A7623CF23C2012C001E9796 /* Extensions */,
 				4A7623CC23C1FB1C001E9796 /* Resources */,
 				4A7623C123C1FB09001E9796 /* Models */,
@@ -301,6 +314,7 @@
 		4AA707742452236600E0FBA6 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				4AA7077B24522FC900E0FBA6 /* ProfileDataSource */,
 				4AA7077824522C3E00E0FBA6 /* Presenter */,
 				4AA70777245224B200E0FBA6 /* Controller */,
 			);
@@ -321,6 +335,23 @@
 				4AA7077924522CAE00E0FBA6 /* ProfilePresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4AA7077B24522FC900E0FBA6 /* ProfileDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				4AA7077C24522FE900E0FBA6 /* ProfileDataSource.swift */,
+			);
+			path = ProfileDataSource;
+			sourceTree = "<group>";
+		};
+		4AA707812452337800E0FBA6 /* BaseNodes */ = {
+			isa = PBXGroup;
+			children = (
+				4A363FAA239D99DE009B4F10 /* BaseNode.swift */,
+				4AA707822452338B00E0FBA6 /* BaseCellNode.swift */,
+			);
+			path = BaseNodes;
 			sourceTree = "<group>";
 		};
 		A2516D47A5196DAF1C422AAF /* Pods */ = {
@@ -511,8 +542,12 @@
 				4AA707762452247000E0FBA6 /* ProfileViewController.swift in Sources */,
 				4A9C965923A41FDA00D4873B /* DividerNode.swift in Sources */,
 				4A7623C823C1FB09001E9796 /* User.swift in Sources */,
+				4AA7077D24522FE900E0FBA6 /* ProfileDataSource.swift in Sources */,
+				4AA707872452391400E0FBA6 /* StatsNode.swift in Sources */,
 				4A7623CB23C1FB09001E9796 /* Stories.swift in Sources */,
 				4AA7077A24522CAE00E0FBA6 /* ProfilePresenter.swift in Sources */,
+				4AA707802452334A00E0FBA6 /* ProfileHeaderNode.swift in Sources */,
+				4AA707852452350100E0FBA6 /* ProfileAndStatsNode.swift in Sources */,
 				4A42EC14243A78E00008F705 /* UIColor+Extension.swift in Sources */,
 				4A363F8D239D97A6009B4F10 /* ViewController.swift in Sources */,
 				4A7623CA23C1FB09001E9796 /* NewsFeed.swift in Sources */,
@@ -522,6 +557,7 @@
 				4A9C964F23A4172100D4873B /* HomeTableNodeDataSource.swift in Sources */,
 				4A9C965F23A4395000D4873B /* Constants.swift in Sources */,
 				4A9C965223A4178B00D4873B /* StoryCellNode.swift in Sources */,
+				4AA707832452338B00E0FBA6 /* BaseCellNode.swift in Sources */,
 				4A42EC10243A6F2B0008F705 /* StoryFeedNode.swift in Sources */,
 				4A7623C723C1FB09001E9796 /* Comment.swift in Sources */,
 				4A7623C923C1FB09001E9796 /* BaseDataSource.swift in Sources */,
