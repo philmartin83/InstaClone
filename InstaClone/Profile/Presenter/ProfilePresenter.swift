@@ -19,6 +19,7 @@ class ProfilePresenter: BaseNode, ASCollectionDelegate {
         flowLayout.minimumLineSpacing = 0
         let collectionNode = ASCollectionNode(collectionViewLayout: flowLayout)
         collectionNode.backgroundColor = .clear
+        collectionNode.alwaysBounceVertical = true
         return collectionNode
     }()
     
