@@ -17,7 +17,6 @@ class StoryFeedDataSource: NSObject, ASCollectionDataSource {
         self.unwatchedStories = dataSource?.filter{d in d.isWatched == false}
         self.watchedStories = dataSource?.filter{d in d.isWatched == true}
         self.myUser = myUser
-        print("Count - \(self.watchedStories?.count)")
     }
     
     func numberOfSections(in collectionNode: ASCollectionNode) -> Int {

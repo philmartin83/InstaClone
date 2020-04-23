@@ -38,6 +38,8 @@
 		4A9C965B23A435FF00D4873B /* LikeShareCommentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C965A23A435FF00D4873B /* LikeShareCommentNode.swift */; };
 		4A9C965F23A4395000D4873B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C965E23A4395000D4873B /* Constants.swift */; };
 		4A9C966223A4412300D4873B /* LikeShareCommentInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C966123A4412300D4873B /* LikeShareCommentInteractor.swift */; };
+		4AA707762452247000E0FBA6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA707752452247000E0FBA6 /* ProfileViewController.swift */; };
+		4AA7077A24522CAE00E0FBA6 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7077924522CAE00E0FBA6 /* ProfilePresenter.swift */; };
 		A312D2AE5ED7771F8C6BC00F /* Pods_InstaCloneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E82D0195F02DE45643583B /* Pods_InstaCloneTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +91,8 @@
 		4A9C965A23A435FF00D4873B /* LikeShareCommentNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeShareCommentNode.swift; sourceTree = "<group>"; };
 		4A9C965E23A4395000D4873B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4A9C966123A4412300D4873B /* LikeShareCommentInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeShareCommentInteractor.swift; sourceTree = "<group>"; };
+		4AA707752452247000E0FBA6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4AA7077924522CAE00E0FBA6 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		55FF43EDC841F57C150B6613 /* Pods_InstaClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		848B9C00E1839240DCC7C41A /* Pods-InstaCloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaCloneTests.debug.xcconfig"; path = "Target Support Files/Pods-InstaCloneTests/Pods-InstaCloneTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E88A74494FC4D9140B249F60 /* Pods-InstaClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaClone.debug.xcconfig"; path = "Target Support Files/Pods-InstaClone/Pods-InstaClone.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 			children = (
 				4A9C965C23A4391F00D4873B /* Core */,
 				4A9C964923A415E700D4873B /* Home */,
+				4AA707742452236600E0FBA6 /* Profile */,
 				4A363F88239D97A6009B4F10 /* AppDelegate.swift */,
 				4A363F8A239D97A6009B4F10 /* SceneDelegate.swift */,
 				4A363F91239D97AF009B4F10 /* Assets.xcassets */,
@@ -291,6 +296,31 @@
 				4A9C966123A4412300D4873B /* LikeShareCommentInteractor.swift */,
 			);
 			path = NodeInteractor;
+			sourceTree = "<group>";
+		};
+		4AA707742452236600E0FBA6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				4AA7077824522C3E00E0FBA6 /* Presenter */,
+				4AA70777245224B200E0FBA6 /* Controller */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		4AA70777245224B200E0FBA6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4AA707752452247000E0FBA6 /* ProfileViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4AA7077824522C3E00E0FBA6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4AA7077924522CAE00E0FBA6 /* ProfilePresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		A2516D47A5196DAF1C422AAF /* Pods */ = {
@@ -478,9 +508,11 @@
 				4A64E0EB2430B7CE0041B902 /* LastCommentNode.swift in Sources */,
 				4A9C965B23A435FF00D4873B /* LikeShareCommentNode.swift in Sources */,
 				4A42EC0E243A6EAC0008F705 /* StoryFeedDataSource.swift in Sources */,
+				4AA707762452247000E0FBA6 /* ProfileViewController.swift in Sources */,
 				4A9C965923A41FDA00D4873B /* DividerNode.swift in Sources */,
 				4A7623C823C1FB09001E9796 /* User.swift in Sources */,
 				4A7623CB23C1FB09001E9796 /* Stories.swift in Sources */,
+				4AA7077A24522CAE00E0FBA6 /* ProfilePresenter.swift in Sources */,
 				4A42EC14243A78E00008F705 /* UIColor+Extension.swift in Sources */,
 				4A363F8D239D97A6009B4F10 /* ViewController.swift in Sources */,
 				4A7623CA23C1FB09001E9796 /* NewsFeed.swift in Sources */,

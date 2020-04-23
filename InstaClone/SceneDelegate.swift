@@ -22,7 +22,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         let viewController = ViewController()
         let navigationController = ASNavigationController(rootViewController: viewController)
-        navigationController.navigationBar.topItem?.title = "InstaClone"
         navigationController.navigationBar.isTranslucent = false
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
