@@ -75,11 +75,28 @@ class LikeShareCommentNode: BaseNode{
         return vStack
     }
     
-    private func setup(){
-        likeButton.style.preferredSize = CGSize(width: 30, height: 30)
-        commentButton.style.preferredSize = CGSize(width: 30, height: 30)
-        shareButton.style.preferredSize = CGSize(width: 30, height: 30)
+    func populate(feed: NewsFeed?) {
         
+        // handle the like logic this can be put into its own class
+        print("\(feed?.user?.profileIcon)")
+        let stringValue = feed?.likes == 1 ? "\(feed?.likes ?? 0) like" : "\(feed?.likes ?? 0) likes"
+        likeCount = feed?.likes ?? 0
+        numberOfLikes.attributedText = NSAttributedString(string: stringValue, attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 13)])
+    }
+    
+    override func asyncTraitCollectionDidChange() {
+        super.asyncTraitCollectionDidChange()
+        dynamicColours()
+    }
+    
+    private func setup(){
+           likeButton.style.preferredSize = CGSize(width: 30, height: 30)
+           commentButton.style.preferredSize = CGSize(width: 30, height: 30)
+           shareButton.style.preferredSize = CGSize(width: 30, height: 30)
+        dynamicColours()
+    }
+    
+    private func dynamicColours() {
         if let colour = iconColour{
             let imageLike = ASImageNodeTintColorModificationBlock(colour)(UIImage(named: "like")!)
             likeButton.setImage(imageLike, for: .normal)
@@ -95,14 +112,5 @@ class LikeShareCommentNode: BaseNode{
             bookmark.setImage(imageBookmark, for: .normal)
             
         }
-    }
-    
-    func populate(feed: NewsFeed?) {
-        
-        // handle the like logic this can be put into its own class
-        print("\(feed?.user?.profileIcon)")
-        let stringValue = feed?.likes == 1 ? "\(feed?.likes ?? 0) like" : "\(feed?.likes ?? 0) likes"
-        likeCount = feed?.likes ?? 0
-        numberOfLikes.attributedText = NSAttributedString(string: stringValue, attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 13)])
     }
 }
