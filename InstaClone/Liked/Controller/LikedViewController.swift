@@ -1,31 +1,24 @@
 //
-//  ProfileViewController.swift
+//  LikedViewController.swift
 //  InstaClone
 //
-//  Created by Philip Martin on 23/04/2020.
+//  Created by Philip Martin on 27/04/2020.
 //  Copyright © 2020 Phil Martin. All rights reserved.
 //
 
 import AsyncDisplayKit
 
-class ProfileViewController: ASViewController<BaseNode> {
-    
-    var profile: ProfilePresenter!
+class LikedViewController: ASViewController<BaseNode> {
     init() {
         super.init(node: BaseNode())
-//        profile = ProfilePresenter()
-//        backgroundColour()
-//        self.node.addSubnode(profile)
-//        node.layoutSpecBlock = { (node, constrainedSize) in
-//            return ASInsetLayoutSpec(insets: UIEdgeInsets.zero, child: self.profile)
-//        }
+        backgroundColour()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidLoad(){
+    override func viewDidLoad() {
         super.viewDidLoad()
         setupNavBar()
     }
@@ -40,7 +33,6 @@ class ProfileViewController: ASViewController<BaseNode> {
     }
     
     private func setupNavBar() {
-        navigationController?.navigationBar.topItem?.title = "That iOS Developer"
+        navigationController?.navigationBar.topItem?.title = "Activty"
     }
-    
 }

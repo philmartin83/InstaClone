@@ -33,9 +33,14 @@ class ProfileHeaderAndStatsNode: BaseNode {
         let cornerSpec = ASCornerLayoutSpec(child: profileImageNode, corner: buttonRatioSpec, location: .bottomRight)
         // Slightly shift center of badge inside of avatar.
         cornerSpec.offset = CGPoint(x: -12, y: -12)
-        let inset =  ASInsetLayoutSpec(insets: .init(top: 10, left: 10, bottom: 0, right: 26), child: cornerSpec)
+        let inset =  ASInsetLayoutSpec(insets: .init(top: 10, left: 10, bottom: 10, right: 26), child: cornerSpec)
         let ratioSpec = ASRatioLayoutSpec(ratio: 0.5, child: inset)
         return ratioSpec
+    }
+    
+    override func asyncTraitCollectionDidChange() {
+        super.asyncTraitCollectionDidChange()
+        dynamicColours()
     }
     
     private func setupNodes() {
@@ -45,11 +50,14 @@ class ProfileHeaderAndStatsNode: BaseNode {
         profileImageNode.cornerRadius = 85/2
         
         addButton.backgroundColor = UIColor.colourStringWitHex(hexColour: "00008b", withAlpha: 1)
-        addButton.setTitle("+", with: UIFont.boldSystemFont(ofSize: 17), with: .white, for: .normal)
-        addButton.borderColor = UIColor.white.cgColor
-        addButton.borderWidth = 3
+        addButton.setTitle("+", with: UIFont.systemFont(ofSize: 17), with: .white, for: .normal)
+        dynamicColours()
+        addButton.borderWidth = 1.5
         addButton.style.preferredSize = CGSize(width: 27, height: 27)
         addButton.cornerRadius = 25/2
-        
+    }
+    
+    private func dynamicColours() {
+        addButton.borderColor = UIColor.tertiarySystemBackground.cgColor
     }
 }

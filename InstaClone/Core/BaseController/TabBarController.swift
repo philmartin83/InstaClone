@@ -10,30 +10,64 @@ import AsyncDisplayKit
 
 class TabBarController: ASTabBarController, UITabBarControllerDelegate {
     let feedController = ViewController()
+    let searchController = SearchViewController()
+    let imagePickerController = ImagePickerViewController()
+    let likedController = LikedViewController()
     let profileController = ProfileViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tabbarSetup()
+        tabBarIcons()
+    }
+    
+    private func tabbarSetup() {
         delegate = self
         tabBar.isTranslucent = false
         tabBar.tintColor = .label
-        let navigationController1 = ASNavigationController(rootViewController: feedController)
-        navigationController1.navigationBar.isTranslucent = false
-        let navigationController2 = ASNavigationController(rootViewController: profileController)
-        navigationController2.navigationBar.isTranslucent = false
-        tabBatIcons()
-        let controllers = [navigationController1, navigationController2]  //array of the root view controllers displayed by the tab bar interface
-        self.viewControllers = controllers
+        configureControllers()
     }
     
-    private func tabBatIcons() {
-        let homeEmpty = UIImage(named: "homeEmpty")
-        let homeFilled = UIImage(named: "homeFilled")
-        let icon1 = UITabBarItem(title: "", image: homeEmpty, selectedImage: homeFilled )
+    private func tabBarIcons() {
+        let icon1 = UITabBarItem(title: "", image:  UIImage(named: "homeEmpty"), selectedImage: UIImage(named: "homeFilled") )
         feedController.tabBarItem = icon1
+        let icon2 = UITabBarItem(title: "", image:  UIImage(named: "searchEmpty"), selectedImage: UIImage(named: "searchFilled") )
+        searchController.tabBarItem = icon2
         
+        let icon3 = UITabBarItem(title: "", image:  UIImage(named: "addImageEmpty"), selectedImage: UIImage(named: "addImageFilled") )
+              imagePickerController.tabBarItem = icon3
         
-        let icon4 = UITabBarItem(title: "", image: UIImage(named: "profile"), selectedImage: UIImage(named: "profile"))
-        profileController.tabBarItem = icon4
+        let icon4 = UITabBarItem(title: "", image:  UIImage(named: "like"), selectedImage: UIImage(named: "likedFilled") )
+        likedController.tabBarItem = icon4
+        
+        let icon5 = UITabBarItem(title: "", image: UIImage(named: "profile")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "profile")?.withRenderingMode(.alwaysOriginal))
+        profileController.tabBarItem = icon5
     }
+    
+    private func configureControllers() {
+        let navigationController1 = ASNavigationController(rootViewController: feedController)
+        navigationController1.navigationBar.isTranslucent = false
+        let navigationController2 = ASNavigationController(rootViewController: searchController)
+        navigationController2.navigationBar.isTranslucent = false
+        let navigationController4 = ASNavigationController(rootViewController: likedController)
+        navigationController4.navigationBar.isTranslucent = false
+        let navigationController5 = ASNavigationController(rootViewController: profileController)
+        navigationController5.navigationBar.isTranslucent = false
+        
+        viewControllers = [navigationController1, navigationController2, imagePickerController, navigationController4, navigationController5]
+      
+    }
+    
+    //MARK: - Delegate
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+      if viewController.isKind(of: ImagePickerViewController.self) {
+         let vc =  ImagePickerViewController()
+//        vc.modalPresentationStyle = .
+         self.present(vc, animated: true, completion: nil)
+         return false
+      }
+      return true
+    }
+    
+    
 }

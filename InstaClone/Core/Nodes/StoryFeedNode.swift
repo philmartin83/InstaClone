@@ -26,14 +26,16 @@ class StoryFeedNode: ASCellNode {
     func populate(story: Stories?, isWatched: Bool){
         nameNode.attributedText = NSAttributedString(string: story?.user.username ?? "Unknown User", attributes: [NSAttributedString.Key.foregroundColor: UIColor.label, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 10)])
         imageNode.url = URL(string: story?.user.profileIcon ?? "")
-        imageNode.borderColor = isWatched ? UIColor.lightGray.cgColor : UIColor.red.cgColor
+        let colour = isWatched ? UIColor.lightGray : UIColor.red
+        imageNode.imageModificationBlock = ASImageNodeRoundBorderModificationBlock(5.0, colour)
     }
     
     private func setupNodes() {
+        let cornerRadius: CGFloat = 63.0
         nameNode.maximumNumberOfLines = 1
         imageNode.style.preferredSize = CGSize(width: 63, height: 63)
-        imageNode.cornerRadius = 63/2
-        imageNode.borderWidth = 2
+        imageNode.cornerRoundingType = .precomposited
+        imageNode.cornerRadius = cornerRadius/2
     }
     
 }

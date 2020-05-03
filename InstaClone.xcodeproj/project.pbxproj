@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4093D2714129B96833189C11 /* Pods_InstaClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FF43EDC841F57C150B6613 /* Pods_InstaClone.framework */; };
+		4A2FC5C324575F1B00BA0FCF /* LikedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2FC5C224575F1B00BA0FCF /* LikedViewController.swift */; };
+		4A2FC5C724575F7500BA0FCF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2FC5C624575F7500BA0FCF /* SearchViewController.swift */; };
+		4A2FC5CC2457688B00BA0FCF /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2FC5CB2457688B00BA0FCF /* ImagePickerViewController.swift */; };
 		4A363F89239D97A6009B4F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A363F88239D97A6009B4F10 /* AppDelegate.swift */; };
 		4A363F8B239D97A6009B4F10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A363F8A239D97A6009B4F10 /* SceneDelegate.swift */; };
 		4A363F8D239D97A6009B4F10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A363F8C239D97A6009B4F10 /* ViewController.swift */; };
@@ -20,6 +23,7 @@
 		4A42EC12243A77170008F705 /* ASDisplayNode+Exntesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A42EC11243A77170008F705 /* ASDisplayNode+Exntesion.swift */; };
 		4A42EC14243A78E00008F705 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A42EC13243A78E00008F705 /* UIColor+Extension.swift */; };
 		4A42EC16243A86860008F705 /* UserStorieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A42EC15243A86860008F705 /* UserStorieNode.swift */; };
+		4A49ADD62458C7A8008B9B53 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A49ADD52458C7A8008B9B53 /* UIImageExtension.swift */; };
 		4A64E0EB2430B7CE0041B902 /* LastCommentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64E0EA2430B7CE0041B902 /* LastCommentNode.swift */; };
 		4A660C1924561EF900E4BCE7 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A660C1824561EF900E4BCE7 /* TabBarController.swift */; };
 		4A7623C723C1FB09001E9796 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7623C223C1FB09001E9796 /* Comment.swift */; };
@@ -63,6 +67,9 @@
 		0D73ECED19C22F12A36BE5C7 /* Pods-InstaCloneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaCloneTests.release.xcconfig"; path = "Target Support Files/Pods-InstaCloneTests/Pods-InstaCloneTests.release.xcconfig"; sourceTree = "<group>"; };
 		28E82D0195F02DE45643583B /* Pods_InstaCloneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaCloneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D07D6409A795148F9B0474E /* Pods-InstaClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaClone.release.xcconfig"; path = "Target Support Files/Pods-InstaClone/Pods-InstaClone.release.xcconfig"; sourceTree = "<group>"; };
+		4A2FC5C224575F1B00BA0FCF /* LikedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedViewController.swift; sourceTree = "<group>"; };
+		4A2FC5C624575F7500BA0FCF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		4A2FC5CB2457688B00BA0FCF /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
 		4A363F85239D97A6009B4F10 /* InstaClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A363F88239D97A6009B4F10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A363F8A239D97A6009B4F10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +86,7 @@
 		4A42EC11243A77170008F705 /* ASDisplayNode+Exntesion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ASDisplayNode+Exntesion.swift"; sourceTree = "<group>"; };
 		4A42EC13243A78E00008F705 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		4A42EC15243A86860008F705 /* UserStorieNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorieNode.swift; sourceTree = "<group>"; };
+		4A49ADD52458C7A8008B9B53 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		4A64E0EA2430B7CE0041B902 /* LastCommentNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastCommentNode.swift; sourceTree = "<group>"; };
 		4A660C1824561EF900E4BCE7 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		4A7623C223C1FB09001E9796 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
@@ -139,6 +147,54 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4A2FC5C024575EDC00BA0FCF /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				4A2FC5C824575F8C00BA0FCF /* Controller */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		4A2FC5C124575EFD00BA0FCF /* Liked */ = {
+			isa = PBXGroup;
+			children = (
+				4A2FC5C524575F5A00BA0FCF /* Controller */,
+			);
+			path = Liked;
+			sourceTree = "<group>";
+		};
+		4A2FC5C524575F5A00BA0FCF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A2FC5C224575F1B00BA0FCF /* LikedViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4A2FC5C824575F8C00BA0FCF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A2FC5C624575F7500BA0FCF /* SearchViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4A2FC5C9245767C400BA0FCF /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				4A2FC5CA245767D300BA0FCF /* Controller */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		4A2FC5CA245767D300BA0FCF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A2FC5CB2457688B00BA0FCF /* ImagePickerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		4A363F7C239D97A6009B4F10 = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +220,10 @@
 			children = (
 				4A9C965C23A4391F00D4873B /* Core */,
 				4A9C964923A415E700D4873B /* Home */,
+				4A2FC5C124575EFD00BA0FCF /* Liked */,
+				4A2FC5C9245767C400BA0FCF /* ImagePicker */,
 				4AA707742452236600E0FBA6 /* Profile */,
+				4A2FC5C024575EDC00BA0FCF /* Search */,
 				4A363F88239D97A6009B4F10 /* AppDelegate.swift */,
 				4A363F8A239D97A6009B4F10 /* SceneDelegate.swift */,
 				4A363F91239D97AF009B4F10 /* Assets.xcassets */,
@@ -217,6 +276,7 @@
 				4A7623D023C2013A001E9796 /* BundleExension.swift */,
 				4A42EC11243A77170008F705 /* ASDisplayNode+Exntesion.swift */,
 				4A42EC13243A78E00008F705 /* UIColor+Extension.swift */,
+				4A49ADD52458C7A8008B9B53 /* UIImageExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -544,12 +604,15 @@
 				4A42EC0E243A6EAC0008F705 /* StoryFeedDataSource.swift in Sources */,
 				4AA707762452247000E0FBA6 /* ProfileViewController.swift in Sources */,
 				4A9C965923A41FDA00D4873B /* DividerNode.swift in Sources */,
+				4A2FC5CC2457688B00BA0FCF /* ImagePickerViewController.swift in Sources */,
 				4A7623C823C1FB09001E9796 /* User.swift in Sources */,
 				4AA7077D24522FE900E0FBA6 /* ProfileDataSource.swift in Sources */,
 				4AA707872452391400E0FBA6 /* StatsNode.swift in Sources */,
 				4A7623CB23C1FB09001E9796 /* Stories.swift in Sources */,
+				4A49ADD62458C7A8008B9B53 /* UIImageExtension.swift in Sources */,
 				4AA7077A24522CAE00E0FBA6 /* ProfilePresenter.swift in Sources */,
 				4AA707802452334A00E0FBA6 /* ProfileHeaderNode.swift in Sources */,
+				4A2FC5C324575F1B00BA0FCF /* LikedViewController.swift in Sources */,
 				4AA707852452350100E0FBA6 /* ProfileAndStatsNode.swift in Sources */,
 				4A42EC14243A78E00008F705 /* UIColor+Extension.swift in Sources */,
 				4A363F8D239D97A6009B4F10 /* ViewController.swift in Sources */,
@@ -565,6 +628,7 @@
 				4A42EC10243A6F2B0008F705 /* StoryFeedNode.swift in Sources */,
 				4A7623C723C1FB09001E9796 /* Comment.swift in Sources */,
 				4A7623C923C1FB09001E9796 /* BaseDataSource.swift in Sources */,
+				4A2FC5C724575F7500BA0FCF /* SearchViewController.swift in Sources */,
 				4A363FAB239D99DE009B4F10 /* BaseNode.swift in Sources */,
 				4A363F8B239D97A6009B4F10 /* SceneDelegate.swift in Sources */,
 				4A9C965423A417E400D4873B /* FeedCellNode.swift in Sources */,

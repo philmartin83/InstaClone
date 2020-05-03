@@ -42,13 +42,13 @@ class StatsNode: BaseCellNode {
     }
     
     func populate() {
-        postCount.attributedText = NSAttributedString(string: "104", attributes: [NSAttributedString.Key.backgroundColor: UIColor.white, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14)])
-        postStaticStats.attributedText = NSAttributedString(string: "Posts", attributes: [NSAttributedString.Key.backgroundColor: UIColor.white, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14)])
-        followerCount.attributedText = NSAttributedString(string: "51", attributes: [NSAttributedString.Key.backgroundColor: UIColor.white, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14)])
-        followerStaticStats.attributedText = NSAttributedString(string: "Followers", attributes: [NSAttributedString.Key.backgroundColor: UIColor.white, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14)])
+        postCount.attributedText = NSAttributedString(string: "104", attributes: [NSAttributedString.Key.foregroundColor: UIColor.label, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14)])
+        postStaticStats.attributedText = NSAttributedString(string: "Posts", attributes: [NSAttributedString.Key.foregroundColor: UIColor.label, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14)])
+        followerCount.attributedText = NSAttributedString(string: "51", attributes: [NSAttributedString.Key.foregroundColor: UIColor.label, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14)])
+        followerStaticStats.attributedText = NSAttributedString(string: "Followers", attributes: [NSAttributedString.Key.foregroundColor: UIColor.label, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14)])
         
-        followingCount.attributedText = NSAttributedString(string: "22", attributes: [NSAttributedString.Key.backgroundColor: UIColor.white, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14)])
-        followingStaticStats.attributedText = NSAttributedString(string: "Following", attributes: [NSAttributedString.Key.backgroundColor: UIColor.white, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14)])
+        followingCount.attributedText = NSAttributedString(string: "22", attributes: [NSAttributedString.Key.foregroundColor: UIColor.label, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14)])
+        followingStaticStats.attributedText = NSAttributedString(string: "Following", attributes: [NSAttributedString.Key.foregroundColor: UIColor.label, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14)])
     }
     
 }

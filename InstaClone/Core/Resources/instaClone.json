@@ -8,7 +8,7 @@
         "user": {
             "user_id": 201,
             "username": "Mario",
-            "profile_image_url": "https://giantbomb1.cbsistatic.com/uploads/original/15/153607/3075875-mario.png"
+            "profile_image_url": "https://www.mariowiki.com/images/archive/6/66/20090924071755%21Mario_SM64DS_art.png"
         },
         "is_watched": false
     },
@@ -16,7 +16,7 @@
         "user": {
             "user_id": 202,
             "username": "Koopa Troopa",
-            "profile_image_url": "https://www.mariowiki.com/images/thumb/5/5c/SuperMarioParty_KoopaTroopa.png/225px-SuperMarioParty_KoopaTroopa.png"
+            "profile_image_url": "https://www.sm128c.com/media/koopa-troopa_320px.png"
         },
         "is_watched": true
     },
@@ -32,7 +32,7 @@
         "user": {
             "user_id": 40,
             "username": "Bart Simpson",
-            "profile_image_url": "https://static.simpsonswiki.com/images/6/65/Bart_Simpson.png"
+            "profile_image_url": "https://vignette.wikia.nocookie.net/thebige/images/4/42/Bart_simpson.jpg"
         },
         "is_watched": false
     },
@@ -50,7 +50,7 @@
         "user": {
             "user_id": 345,
             "username": "Baby Mario",
-            "profile_image_url": "https://www.mariowiki.com/images/thumb/5/58/BabyMarioSluggers.png/1200px-BabyMarioSluggers.png"
+            "profile_image_url": "https://www.mariowiki.com/images/d/de/Baby_Mario_MT64_artwork.jpg"
         },
         "image_url": "https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg",
         "aspect_ratio": 1,
@@ -60,7 +60,7 @@
             "user": {
                 "username": "Mario",
                 "user_id": 201,
-                "profile_image_url": "https://giantbomb1.cbsistatic.com/uploads/original/15/153607/3075875-mario.png"
+                "profile_image_url": "https://www.mariowiki.com/images/archive/6/66/20090924071755%21Mario_SM64DS_art.png"
             }
         },
         "post_id": 1420,
@@ -70,7 +70,7 @@
         "user": {
             "user_id": 40,
             "username": "Bart Simpson",
-            "profile_image_url": "https://static.simpsonswiki.com/images/6/65/Bart_Simpson.png"
+            "profile_image_url": "https://vignette.wikia.nocookie.net/thebige/images/4/42/Bart_simpson.jpg"
         },
         "image_url": "https://images.pexels.com/photos/371589/pexels-photo-371589.jpeg",
         "aspect_ratio": 0.65,
@@ -123,7 +123,7 @@
         "user": {
             "user_id": 345,
             "username": "Baby Mario",
-            "profile_image_url": "https://www.mariowiki.com/images/thumb/5/58/BabyMarioSluggers.png/1200px-BabyMarioSluggers.png"
+            "profile_image_url": "https://www.mariowiki.com/images/d/de/Baby_Mario_MT64_artwork.jpg"
         },
         "image_url": "https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg",
         "aspect_ratio": 1,
@@ -133,7 +133,7 @@
             "user": {
                 "username": "Mario",
                 "user_id": 201,
-                "profile_image_url": "https://giantbomb1.cbsistatic.com/uploads/original/15/153607/3075875-mario.png"
+                "profile_image_url": "https://www.mariowiki.com/images/archive/6/66/20090924071755%21Mario_SM64DS_art.png"
             }
         },
         "post_id": 1420,
@@ -143,7 +143,7 @@
         "user": {
             "user_id": 40,
             "username": "Bart Simpson",
-            "profile_image_url": "https://static.simpsonswiki.com/images/6/65/Bart_Simpson.png"
+            "profile_image_url": "https://vignette.wikia.nocookie.net/thebige/images/4/42/Bart_simpson.jpg"
         },
         "image_url": "https://images.pexels.com/photos/371589/pexels-photo-371589.jpeg",
         "aspect_ratio": 0.65,
@@ -196,7 +196,7 @@
         "user": {
             "user_id": 345,
             "username": "Baby Mario",
-            "profile_image_url": "https://www.mariowiki.com/images/thumb/5/58/BabyMarioSluggers.png/1200px-BabyMarioSluggers.png"
+            "profile_image_url": "https://www.mariowiki.com/images/d/de/Baby_Mario_MT64_artwork.jpg"
         },
         "image_url": "https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg",
         "aspect_ratio": 1,
@@ -206,7 +206,7 @@
             "user": {
                 "username": "Mario",
                 "user_id": 201,
-                "profile_image_url": "https://giantbomb1.cbsistatic.com/uploads/original/15/153607/3075875-mario.png"
+                "profile_image_url": "https://www.mariowiki.com/images/archive/6/66/20090924071755%21Mario_SM64DS_art.png"
             }
         },
         "post_id": 1420,
@@ -216,7 +216,7 @@
         "user": {
             "user_id": 40,
             "username": "Bart Simpson",
-            "profile_image_url": "https://static.simpsonswiki.com/images/6/65/Bart_Simpson.png"
+            "profile_image_url": "https://vignette.wikia.nocookie.net/thebige/images/4/42/Bart_simpson.jpg"
         },
         "image_url": "https://images.pexels.com/photos/371589/pexels-photo-371589.jpeg",
         "aspect_ratio": 0.65,
@@ -269,7 +269,7 @@
         "user": {
             "user_id": 345,
             "username": "Baby Mario",
-            "profile_image_url": "https://www.mariowiki.com/images/thumb/5/58/BabyMarioSluggers.png/1200px-BabyMarioSluggers.png"
+            "profile_image_url": "https://www.mariowiki.com/images/d/de/Baby_Mario_MT64_artwork.jpg"
         },
         "image_url": "https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg",
         "aspect_ratio": 1,
@@ -279,7 +279,7 @@
             "user": {
                 "username": "Mario",
                 "user_id": 201,
-                "profile_image_url": "https://giantbomb1.cbsistatic.com/uploads/original/15/153607/3075875-mario.png"
+                "profile_image_url": "https://www.mariowiki.com/images/archive/6/66/20090924071755%21Mario_SM64DS_art.png"
             }
         },
         "post_id": 1420,
@@ -289,7 +289,7 @@
         "user": {
             "user_id": 40,
             "username": "Bart Simpson",
-            "profile_image_url": "https://static.simpsonswiki.com/images/6/65/Bart_Simpson.png"
+            "profile_image_url": "https://vignette.wikia.nocookie.net/thebige/images/4/42/Bart_simpson.jpg"
         },
         "image_url": "https://images.pexels.com/photos/371589/pexels-photo-371589.jpeg",
         "aspect_ratio": 0.65,

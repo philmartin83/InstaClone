@@ -64,7 +64,9 @@ class HeaderNode: BaseNode{
     //MARK:- Private Fucntions
     
     private func setup(){
-        profileImageNode.cornerRadius = 35/2
+        let cornerRadius: CGFloat = 35.0
+        profileImageNode.cornerRoundingType = .precomposited
+        profileImageNode.cornerRadius = cornerRadius/2
         profileImageNode.style.preferredSize = CGSize(width: 35, height: 35)
         dynamicColour()
         extraButton.style.preferredSize = CGSize(width: 10, height: 10)
