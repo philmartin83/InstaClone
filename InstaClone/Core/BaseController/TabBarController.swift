@@ -26,6 +26,7 @@ class TabBarController: ASTabBarController, UITabBarControllerDelegate {
         tabBar.isTranslucent = false
         tabBar.tintColor = .label
         configureControllers()
+        selectedIndex = 4
     }
     
     private func tabBarIcons() {
@@ -62,7 +63,6 @@ class TabBarController: ASTabBarController, UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
       if viewController.isKind(of: ImagePickerViewController.self) {
          let vc =  ImagePickerViewController()
-//        vc.modalPresentationStyle = .
          self.present(vc, animated: true, completion: nil)
          return false
       }

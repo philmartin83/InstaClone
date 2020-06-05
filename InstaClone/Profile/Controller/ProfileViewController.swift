@@ -13,12 +13,12 @@ class ProfileViewController: ASViewController<BaseNode> {
     var profile: ProfilePresenter!
     init() {
         super.init(node: BaseNode())
-//        profile = ProfilePresenter()
-//        backgroundColour()
-//        self.node.addSubnode(profile)
-//        node.layoutSpecBlock = { (node, constrainedSize) in
-//            return ASInsetLayoutSpec(insets: UIEdgeInsets.zero, child: self.profile)
-//        }
+        profile = ProfilePresenter()
+        backgroundColour()
+        self.node.addSubnode(profile)
+        node.layoutSpecBlock = { (node, constrainedSize) in
+            return ASInsetLayoutSpec(insets: UIEdgeInsets.zero, child: self.profile)
+        }
     }
     
     required init?(coder: NSCoder) {

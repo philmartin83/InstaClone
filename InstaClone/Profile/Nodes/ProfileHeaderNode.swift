@@ -20,17 +20,19 @@ class ProfileHeaderAndStatsNode: BaseNode {
     }
     
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
+        return ASStackLayoutSpec(direction: .horizontal, spacing: 10, justifyContent: .start, alignItems: .center, children: [profileImageSpec, statsSpec])
+    }
+    
+    var statsSpec: ASLayoutSpec {
         let stack = ASStackLayoutSpec(direction: .horizontal, spacing: 0, justifyContent: .end, alignItems: .end, children: [stats])
-        let rightPadding = ASInsetLayoutSpec( insets: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 50),
-                                              child: stack)
-        rightPadding.style.flexGrow = 1
-        let ratioSpec = ASRatioLayoutSpec(ratio: 0.5, child: rightPadding)
-        return ASStackLayoutSpec(direction: .horizontal, spacing: 30, justifyContent: .start, alignItems: .center, children: [profileImageSpec, ratioSpec])
+             let rightPadding = ASInsetLayoutSpec( insets: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 50),
+                                                   child: stack)
+             rightPadding.style.flexGrow = 1
+        return rightPadding
     }
     
     var profileImageSpec: ASLayoutSpec {
-        let buttonRatioSpec = ASRatioLayoutSpec(ratio: 0.5, child: addButton)
-        let cornerSpec = ASCornerLayoutSpec(child: profileImageNode, corner: buttonRatioSpec, location: .bottomRight)
+        let cornerSpec = ASCornerLayoutSpec(child: profileImageNode, corner: addButton, location: .bottomRight)
         // Slightly shift center of badge inside of avatar.
         cornerSpec.offset = CGPoint(x: -12, y: -12)
         let inset =  ASInsetLayoutSpec(insets: .init(top: 10, left: 10, bottom: 10, right: 26), child: cornerSpec)
@@ -46,7 +48,8 @@ class ProfileHeaderAndStatsNode: BaseNode {
     private func setupNodes() {
         
         profileImageNode.style.preferredSize = CGSize(width: 85, height: 85)
-        profileImageNode.backgroundColor = .green
+        profileImageNode.image = UIImage(named: "profile")
+        profileImageNode.cornerRoundingType = .precomposited
         profileImageNode.cornerRadius = 85/2
         
         addButton.backgroundColor = UIColor.colourStringWitHex(hexColour: "00008b", withAlpha: 1)

@@ -11,7 +11,7 @@ import AsyncDisplayKit
 class ProfileDataSource: NSObject, ASCollectionDataSource {
     
     func numberOfSections(in collectionNode: ASCollectionNode) -> Int {
-        return 2
+        return 3
     }
     
     func collectionNode(_ collectionNode: ASCollectionNode, numberOfItemsInSection section: Int) -> Int {
